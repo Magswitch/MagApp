@@ -13,6 +13,10 @@
 		886A12381B267912008DAA50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886A12371B267912008DAA50 /* Images.xcassets */; };
 		886A123B1B267912008DAA50 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 886A12391B267912008DAA50 /* LaunchScreen.xib */; };
 		886A12471B267912008DAA50 /* pickerProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A12461B267912008DAA50 /* pickerProjTests.swift */; };
+		886A12511B2763C3008DAA50 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A12501B2763C3008DAA50 /* CoreFoundation.framework */; };
+		886A12531B2763D0008DAA50 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A12521B2763D0008DAA50 /* CoreBluetooth.framework */; };
+		886A12551B2763DC008DAA50 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A12541B2763DC008DAA50 /* CoreData.framework */; };
+		886A12571B2763EB008DAA50 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A12561B2763EB008DAA50 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		886A12401B267912008DAA50 /* pickerProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pickerProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		886A12451B267912008DAA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		886A12461B267912008DAA50 /* pickerProjTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickerProjTests.swift; sourceTree = "<group>"; };
+		886A12501B2763C3008DAA50 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		886A12521B2763D0008DAA50 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		886A12541B2763DC008DAA50 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		886A12561B2763EB008DAA50 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886A12571B2763EB008DAA50 /* QuartzCore.framework in Frameworks */,
+				886A12551B2763DC008DAA50 /* CoreData.framework in Frameworks */,
+				886A12531B2763D0008DAA50 /* CoreBluetooth.framework in Frameworks */,
+				886A12511B2763C3008DAA50 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +71,10 @@
 		886A12221B267912008DAA50 = {
 			isa = PBXGroup;
 			children = (
+				886A12561B2763EB008DAA50 /* QuartzCore.framework */,
+				886A12541B2763DC008DAA50 /* CoreData.framework */,
+				886A12521B2763D0008DAA50 /* CoreBluetooth.framework */,
+				886A12501B2763C3008DAA50 /* CoreFoundation.framework */,
 				886A122D1B267912008DAA50 /* pickerProj */,
 				886A12431B267912008DAA50 /* pickerProjTests */,
 				886A122C1B267912008DAA50 /* Products */,
