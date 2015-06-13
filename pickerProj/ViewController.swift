@@ -48,12 +48,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         connectionLabel.text = connectionStatus
     }
     
-    
-    @IBAction func optionsButton(sender: AnyObject) {
-        
-    }
-    
-    
     @IBAction func refreshButton(sender: AnyObject) {
       
         littleLabel.text = "Safe "

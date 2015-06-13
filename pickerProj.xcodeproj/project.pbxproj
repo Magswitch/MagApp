@@ -427,6 +427,7 @@
 				886A124C1B267912008DAA50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		886A124D1B267912008DAA50 /* Build configuration list for PBXNativeTarget "pickerProjTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +436,7 @@
 				886A124F1B267912008DAA50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
