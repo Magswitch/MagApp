@@ -17,8 +17,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     
     let connectButtonView = UIView()
-    let disconnectedLabel = UILabel()
-    
     
     var backgroundTransparencyDown: UIColor = UIColor(red: 0.25, green: 0.0, blue: 0.5, alpha: 0.05)
     var backgroundTransparencyUp: UIColor = UIColor(red: 0.25, green: 0.3, blue: 0.2, alpha: 0.0)
@@ -27,14 +25,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  
     let toolArray = ["PLAY20x4","PLAY20x6","PLAY40x2","E-Drive 50mm", "E-Drive 30mm", "SF600"]
     let valueArray = ["24", "22", "20","17","12","11","10","5","4","3","2","1","3/4","1/2","1/4","1/8","1/10"]
-    
     let unitArray = ["Gauge", "cm", "mm", "in"]
     
     var connectionStatus: String = ""
     
     var centralManager : CBCentralManager!
     var sensorTagPeripheral : CBPeripheral!
-    
     var discoveredPeripheral:CBPeripheral?
     
     
@@ -62,9 +58,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         littleLabel.text = "Unsafe"
         
+        updateConnectionStatus()
         UIView.animateWithDuration(0.3, animations: {self.connectButtonView.backgroundColor = self.blueTransparency; self.connectButtonView.frame = CGRect(x: 0, y: 380, width: 200, height: 50)})
         
-        UIView.transitionWithView(connectionLabel, duration: 1.5, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { self.connectionLabel.textColor = UIColor.blackColor()}, completion: nil)
+        UIView.transitionWithView(connectionLabel, duration: 1.2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { self.connectionLabel.textColor = UIColor.blackColor()}, completion: nil)
          UIView.transitionWithView(connectedLabel, duration: 0.2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { self.connectedLabel.textColor = self.backgroundTransparencyUp}, completion: nil)
         
          self.view.bringSubviewToFront(self.connectionLabel)
@@ -75,33 +72,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         littleLabel.text = "Safe "
         centralManager.scanForPeripheralsWithServices(nil, options: nil)
         connectionStatus = "Scanning..."
-        connectionSwap(1)
+        connectedLabel.text = "Okay"
+        updateConnectionStatus()
+        
         
         UIView.animateWithDuration(0.3, animations: {self.connectButtonView.backgroundColor = self.greenTransparency; self.connectButtonView.frame = CGRect(x: 0+180, y: 380, width: 200, height: 50)})
         
         UIView.transitionWithView(connectionLabel, duration: 0.2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { self.connectionLabel.textColor = self.backgroundTransparencyUp}, completion: nil)
-        UIView.transitionWithView(connectedLabel, duration: 1.5, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { self.connectedLabel.textColor = UIColor.blackColor()}, completion: nil)
+        UIView.transitionWithView(connectedLabel, duration: 1.2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { self.connectedLabel.textColor = UIColor.blackColor()}, completion: nil)
         
     }
-    
-    
-    func connectionSwap(destination: Int) {
-        
-        if destination == 0 {
-            
-            
-                    UIView.animateWithDuration(2.0, animations: {self.connectionLabel.textColor = UIColor.whiteColor()})
-                
-        }
-            
-        else if destination == 1 {
-            
-            
-                    UIView.animateWithDuration(2.0, animations: {self.connectionLabel.textColor = self.backgroundTransparencyUp})
-                    
-            }
-        }
-        
     
     
     
@@ -122,7 +102,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         case .PoweredOn:
             println("ON")
             connectionStatus = "Connected"
-            connectionSwap(1)
+            updateConnectionStatus()
            
             self.scanButton(self)
             break
@@ -144,6 +124,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         case .Unsupported:
             println("Unsupported")
             connectionStatus = "Unsupported"
+            updateConnectionStatus()
             break
             
         default:
@@ -233,15 +214,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         connectButtonView.backgroundColor = self.blueTransparency
         connectButtonView.frame = CGRect(x: 0, y: 380, width: 200, height: 50)
         
-
         
         littleLabel.text = connectionStatus
+        self.connectedLabel.text = ""
         
         self.view.addSubview(connectButtonView)
-        self.view.addSubview(disconnectedLabel)
-     
-        
-        
         
         
         centralManager = CBCentralManager(delegate: self, queue: nil)

@@ -51,12 +51,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcV-Qd-aHf">
-                                        <rect key="frame" x="0.0" y="465" width="231" height="50"/>
+                                        <rect key="frame" x="0.0" y="465" width="61" height="50"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="61" id="7br-4t-yj6"/>
                                             <constraint firstAttribute="width" constant="87" id="UmX-Kj-zEO"/>
-                                            <constraint firstAttribute="width" constant="231" id="XPv-m8-MLn"/>
-                                            <constraint firstAttribute="height" constant="50" id="dc3-xv-2Y4"/>
                                             <constraint firstAttribute="height" constant="63" id="lYc-uh-S0C"/>
+                                            <constraint firstAttribute="height" constant="50" id="p1H-jK-ydw"/>
                                         </constraints>
                                         <color key="tintColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="resfreshButton">
@@ -73,36 +73,6 @@
                                             <action selector="refreshButtonRelease:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qku-Qe-TJJ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgC-UC-w1H">
-                                        <rect key="frame" x="231" y="465" width="80" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="1ev-ox-8d2"/>
-                                            <constraint firstAttribute="width" constant="80" id="6Vz-73-ti4"/>
-                                            <constraint firstAttribute="width" constant="51" id="xCb-h1-fyy"/>
-                                        </constraints>
-                                        <state key="normal" title="Scan" image="scanButton">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="1ev-ox-8d2"/>
-                                                <exclude reference="xCb-h1-fyy"/>
-                                            </mask>
-                                        </variation>
-                                        <connections>
-                                            <action selector="scanButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G1M-wv-1Zp"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Refresh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="od4-pk-QxM">
-                                        <rect key="frame" x="60" y="479" width="59" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="59" id="xJT-6c-NtW"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                        <color key="textColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanning" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wss-sW-oLe">
                                         <rect key="frame" x="20" y="325" width="129" height="32"/>
                                         <constraints>
@@ -120,28 +90,48 @@
                                         <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgC-UC-w1H">
+                                        <rect key="frame" x="60" y="465" width="59" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="1ev-ox-8d2"/>
+                                            <constraint firstAttribute="width" constant="59" id="4Dy-0V-ByU"/>
+                                            <constraint firstAttribute="width" constant="51" id="xCb-h1-fyy"/>
+                                        </constraints>
+                                        <state key="normal" title="Scan" image="scanButton">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="1ev-ox-8d2"/>
+                                                <exclude reference="xCb-h1-fyy"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="scanButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G1M-wv-1Zp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstItem="fgC-UC-w1H" firstAttribute="top" secondItem="OcV-Qd-aHf" secondAttribute="top" id="2Kh-br-qoI"/>
                                     <constraint firstItem="fgC-UC-w1H" firstAttribute="centerX" secondItem="wss-sW-oLe" secondAttribute="centerX" id="2qj-lj-FOy"/>
-                                    <constraint firstAttribute="bottom" secondItem="OcV-Qd-aHf" secondAttribute="bottom" constant="36" id="BPM-O7-fNn"/>
-                                    <constraint firstAttribute="bottom" secondItem="od4-pk-QxM" secondAttribute="bottom" constant="51" id="BzE-nQ-dWo"/>
-                                    <constraint firstItem="fgC-UC-w1H" firstAttribute="top" secondItem="OcV-Qd-aHf" secondAttribute="top" id="Dma-ze-dFy"/>
                                     <constraint firstItem="OcV-Qd-aHf" firstAttribute="leading" secondItem="B9o-1u-96J" secondAttribute="leading" constant="1" id="Hhq-us-PqS"/>
                                     <constraint firstItem="wss-sW-oLe" firstAttribute="firstBaseline" secondItem="raO-gT-J84" secondAttribute="firstBaseline" id="KIC-8V-Hs8"/>
-                                    <constraint firstItem="fgC-UC-w1H" firstAttribute="bottom" secondItem="OcV-Qd-aHf" secondAttribute="bottom" id="KTf-Ne-DSs"/>
                                     <constraint firstItem="OcV-Qd-aHf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="B9o-1u-96J" secondAttribute="bottom" constant="5" id="LFG-PL-50f"/>
                                     <constraint firstItem="wss-sW-oLe" firstAttribute="top" secondItem="B9o-1u-96J" secondAttribute="bottom" constant="15" id="OmX-Jy-1S2"/>
+                                    <constraint firstItem="OcV-Qd-aHf" firstAttribute="leading" secondItem="PhZ-dJ-FoR" secondAttribute="leading" id="OqV-i1-2eS"/>
+                                    <constraint firstItem="fgC-UC-w1H" firstAttribute="leading" secondItem="1Sr-Qj-j4Y" secondAttribute="leading" constant="60" id="PKN-4A-hHD"/>
                                     <constraint firstItem="wss-sW-oLe" firstAttribute="baseline" secondItem="raO-gT-J84" secondAttribute="baseline" id="SW1-LL-VrC"/>
+                                    <constraint firstItem="fgC-UC-w1H" firstAttribute="bottom" secondItem="OcV-Qd-aHf" secondAttribute="bottom" id="T50-mb-f1C"/>
                                     <constraint firstAttribute="bottom" secondItem="wss-sW-oLe" secondAttribute="bottom" constant="194" id="Tqq-Zw-u7j"/>
+                                    <constraint firstAttribute="bottom" secondItem="OcV-Qd-aHf" secondAttribute="bottom" constant="36" id="UbC-Zv-Fna"/>
                                     <constraint firstItem="B9o-1u-96J" firstAttribute="leading" secondItem="1Sr-Qj-j4Y" secondAttribute="leadingMargin" id="YMm-WT-PfE"/>
                                     <constraint firstItem="PhZ-dJ-FoR" firstAttribute="leading" secondItem="1Sr-Qj-j4Y" secondAttribute="leading" id="a4H-Va-dT2"/>
                                     <constraint firstAttribute="trailing" secondItem="PhZ-dJ-FoR" secondAttribute="trailing" id="eYt-nk-Fth"/>
                                     <constraint firstAttribute="bottom" secondItem="OcV-Qd-aHf" secondAttribute="bottom" constant="53" id="gLW-qO-WJQ"/>
                                     <constraint firstAttribute="trailing" secondItem="raO-gT-J84" secondAttribute="trailing" constant="59" id="hSp-Or-VeI"/>
                                     <constraint firstItem="wss-sW-oLe" firstAttribute="leading" secondItem="1Sr-Qj-j4Y" secondAttribute="leading" constant="20" id="nTg-KN-fBu"/>
-                                    <constraint firstItem="fgC-UC-w1H" firstAttribute="leading" secondItem="OcV-Qd-aHf" secondAttribute="trailing" id="q10-Iz-F1m"/>
-                                    <constraint firstItem="fgC-UC-w1H" firstAttribute="leading" secondItem="1Sr-Qj-j4Y" secondAttribute="leading" constant="231" id="rX5-Nj-zyG"/>
                                     <constraint firstItem="PhZ-dJ-FoR" firstAttribute="top" secondItem="1Sr-Qj-j4Y" secondAttribute="top" constant="19" id="vWf-E6-IvX"/>
                                     <constraint firstItem="B9o-1u-96J" firstAttribute="centerY" secondItem="sDr-mT-VVz" secondAttribute="centerY" id="xQw-ww-g3D"/>
                                     <constraint firstItem="sDr-mT-VVz" firstAttribute="leading" secondItem="B9o-1u-96J" secondAttribute="trailing" constant="44" id="xsZ-WU-dA5"/>
