@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D98A93E2-EF1E-46EB-8722-AA795061E8A3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>pickerProj</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>5E4D8D9584B47FCB961F233AFA324A4B3C7DEACC</key>
 		<string>https://github.com/agent-reed/MagApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>pickerProj.xcodeproj/project.xcworkspace</string>
+	<string>pickerProj.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5E4D8D9584B47FCB961F233AFA324A4B3C7DEACC</key>
