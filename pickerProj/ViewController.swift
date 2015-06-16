@@ -17,14 +17,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     
     let connectButtonView = UIView()
+    let safteyButtonView = UIView()
     
     var backgroundTransparencyDown: UIColor = UIColor(red: 0.25, green: 0.0, blue: 0.5, alpha: 0.05)
     var backgroundTransparencyUp: UIColor = UIColor(red: 0.25, green: 0.3, blue: 0.2, alpha: 0.0)
     var blueTransparency: UIColor = UIColor(red: 0.0, green: 0.0, blue: 1.0, alpha: 0.15)
-    var greenTransparency: UIColor = UIColor(red: 0.0, green: 1.0, blue: 0.0, alpha: 0.3)
- 
-    let toolArray = ["PLAY20x4","PLAY20x6","PLAY40x2","E-Drive 50mm", "E-Drive 30mm", "SF600"]
-    let valueArray = ["24", "22", "20","17","12","11","10","5","4","3","2","1","3/4","1/2","1/4","1/8","1/10"]
+    var greenTransparency: UIColor = UIColor(red: 0.0, green: 1.0, blue: 0.0, alpha: 0.2)
+    var redTransparency: UIColor = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.2)
+  
+    let toolArray = ["AR15", "AR20", "AR30","PLAY 20x4","PLAY 50x2","PLAY 50x3","PLAY 50x4", "PLAY 70x2", "PLAY 70x3","PLAY70x4","E-Drive 50mm", "E-Drive 30mm", "SF600"]
+    let valueArray = ["24", "23","22","21","20","19","18","17","16","15","14","13","12","11","10","9","8","7","6","5","4","3","2","1","7/8","3/4","1/2","1/4","1/8","1/10"]
     let unitArray = ["Gauge", "cm", "mm", "in"]
     
     var connectionStatus: String = ""
@@ -36,16 +38,22 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     
     
+    
+    
+    
                      ///////////
     ///////////////// Outlets //////////////////////////////////////
     
- 
     @IBOutlet weak var littleLabel: UILabel!
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var scanButton: UIButton!
     @IBOutlet weak var connectionLabel: UILabel!
     @IBOutlet weak var connectedLabel: UILabel!
     
+    @IBAction func thirdButton(sender: AnyObject) {
+        
+        
+    }
     
     func updateConnectionStatus(){
         
@@ -59,12 +67,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         littleLabel.text = "Unsafe"
         
         updateConnectionStatus()
-        UIView.animateWithDuration(0.3, animations: {self.connectButtonView.backgroundColor = self.blueTransparency; self.connectButtonView.frame = CGRect(x: 0, y: 380, width: 200, height: 50)})
+        UIView.animateWithDuration(0.3, animations: {self.connectButtonView.backgroundColor = self.blueTransparency; self.connectButtonView.frame = CGRect(x: 0, y: 380, width: 190, height: 50)})
         
         UIView.transitionWithView(connectionLabel, duration: 1.2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { self.connectionLabel.textColor = UIColor.blackColor()}, completion: nil)
          UIView.transitionWithView(connectedLabel, duration: 0.2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { self.connectedLabel.textColor = self.backgroundTransparencyUp}, completion: nil)
         
-         self.view.bringSubviewToFront(self.connectionLabel)
     }
     
     
@@ -76,7 +83,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         updateConnectionStatus()
         
         
-        UIView.animateWithDuration(0.3, animations: {self.connectButtonView.backgroundColor = self.greenTransparency; self.connectButtonView.frame = CGRect(x: 0+180, y: 380, width: 200, height: 50)})
+        UIView.animateWithDuration(0.3, animations: {self.connectButtonView.backgroundColor = self.greenTransparency; self.connectButtonView.frame = CGRect(x: 0+190, y: 380, width: 190, height: 50)})
         
         UIView.transitionWithView(connectionLabel, duration: 0.2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { self.connectionLabel.textColor = self.backgroundTransparencyUp}, completion: nil)
         UIView.transitionWithView(connectedLabel, duration: 1.2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { self.connectedLabel.textColor = UIColor.blackColor()}, completion: nil)
@@ -212,13 +219,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.viewDidLoad()
     
         connectButtonView.backgroundColor = self.blueTransparency
-        connectButtonView.frame = CGRect(x: 0, y: 380, width: 200, height: 50)
+        connectButtonView.frame = CGRect(x: 0, y: 380, width: 190, height: 50)
         
+        safteyButtonView.backgroundColor = self.redTransparency
+        safteyButtonView.frame = CGRect(x: 0, y: 430, width: 190, height: 50)
         
         littleLabel.text = connectionStatus
         self.connectedLabel.text = ""
         
         self.view.addSubview(connectButtonView)
+        self.view.addSubview(safteyButtonView)
         
         
         centralManager = CBCentralManager(delegate: self, queue: nil)
