@@ -33,9 +33,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var amberTransparency: UIColor = UIColor(red: 1.0, green: 0.1, blue: 0.0, alpha: 0.3)
     
     //Arrays
-    let toolArray = ["PLAY20x4","PLAY20x6","PLAY40x2","E-Drive 50mm", "E-Drive 30mm", "SF600"]
-    let valueArray = ["24", "22", "20","17","12","11","10","5","4","3","2","1","3/4","1/2","1/4","1/8","1/10"]
-    let unitArray = ["Gauge", "cm", "mm", "in"]
+    let toolArray = ["AR15","AR20","AR30","PLAY20x4","PLAY50x2","PLAY50x3","PLAY50x4","PLAY70x2","PLAY70x3","PLAY70x4","E-Drive 50mm", "E-Drive 30mm", "SF600"]
+    let valueArray = ["24", "23","22","21","20","19","18","17","16","15","14","13","12","11","10","9","8","7","6","5","4","3","2","1","3/4","1/2","1/4","1/8","1/10"]
+    let unitArray = ["inch","gauge","cm", "mm"]
     
     //Bluetooth
     var connectionStatus: String = ""
@@ -62,13 +62,21 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var connectedLabel: UILabel!
     
     
+
+/////////////////////////
+    //
+    //   Buttons
+    //
+//////////////////////////
+    // These are just test buttons that should be removed at some point..
+    
     @IBAction func Unsafe(sender: AnyObject) {
         
-        safetyBarPositionSwap("Unsafe")
+        safetyStatus = "Unsafe"
+        safetyBarPositionSwap(getSafetyBarStatus())
         
     }
 
-    
     @IBAction func refreshButtonRelease(sender: AnyObject) {
         
        
@@ -88,7 +96,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         
     }
-    
     
     @IBAction func scanButton(sender: AnyObject) {
       
@@ -119,7 +126,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     var safetyStatus:String = ""
     
-
     func getSafetyBarStatus()->String {
         
         return safetyStatus
@@ -138,7 +144,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
        UIView.transitionWithView(label, duration: duration, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {label.textColor = UIColor.blackColor()}, completion: nil)
         
     }
-    
     
     func safetyBarPositionSwap(safetyStatus:String) {
         
@@ -317,6 +322,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         safetyStatusView.backgroundColor = self.redTransparency
         safetyStatusView.frame = CGRect(x: 0, y: 430, width: 190, height: 50)
+        
+        
         
         cautionLabel.textColor = self.backgroundTransparencyUp
         safeLabel.textColor = self.backgroundTransparencyUp
