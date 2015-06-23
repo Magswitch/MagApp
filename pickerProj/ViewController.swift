@@ -21,10 +21,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     let connectionStatusView = UIView()
     let safetyStatusView = UIView()
+    let connectionLabel = UILabel()
+    let safetyLabel = UILabel()
     
 //------Colors-
-    let backgroundTransparencyDown: UIColor = UIColor(red: 0.25, green: 0.0, blue: 0.5, alpha: 0.05)
-    let backgroundTransparencyUp: UIColor = UIColor(red: 0.25, green: 0.3, blue: 0.2, alpha: 0.0)
+    
+    let transparent: UIColor = UIColor(red: 0.25, green: 0.3, blue: 0.2, alpha: 0.0)
     let blueTransparency: UIColor = UIColor(red: 0.0, green: 0.0, blue: 1.0, alpha: 0.15)
     let greenTransparency: UIColor = UIColor(red: 0.0, green: 1.0, blue: 0.0, alpha: 0.3)
     let redTransparency: UIColor = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.4)
@@ -50,50 +52,63 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 /*
 ///////////// Outlets
 */
-    
-    @IBOutlet weak var unsafeLabel: UILabel!
-    @IBOutlet weak var cautionLabel: UILabel!
-    @IBOutlet weak var safeLabel: UILabel!
-    @IBOutlet weak var backgroundView: UIView!
-    @IBOutlet weak var connectedLabel: UILabel!
-    @IBOutlet weak var connectionLabel: UILabel!
+
+
 
 /*
 ///////////// Buttons
 */
-    // These are just test buttons that should be removed at some point..
+    // These are just test buttons that should be removed at some point.. 
+    // But can be used as a good starting point for BLE action control
     
-    @IBAction func Unsafe(sender: AnyObject) {
+    @IBAction func offButton(sender: AnyObject) {
         
-        safetyStatus = "Unsafe"
-        safetyBarPositionSwap(getSafetyBarStatus())
+        connectionStatus = "Disconnected"
+        connectionBarPositionSwap(getConnectionStatus())
+        
         
     }
     @IBAction func connectedButton(sender: AnyObject) {
         
         connectionStatus = "Connected"
-        connectedLabel.text = "Okay"
-        updateConnectionStatusLabel()
-        
-        fadeToGreen(connectionStatusView, duration: 0.3)
-        slideRight(connectionStatusView, duration: 0.3)
-        
         connectionBarPositionSwap(getConnectionStatus())
-        safetyBarPositionSwap(getSafetyBarStatus())
         
+        fadeInView(safetyStatusView, duration: 0.8)
+        fadeInView(safetyLabel, duration: 0.8)
         
     }
     @IBAction func scanButton(sender: AnyObject) {
       
         centralManager.scanForPeripheralsWithServices(nil, options: nil)
-        connectionStatus = "Scanning..."
-        connectedLabel.text = "Okay"
-        updateConnectionStatusLabel()
         
-        UIView.transitionWithView(connectionLabel, duration: 0.2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { self.connectionLabel.textColor = self.backgroundTransparencyUp}, completion: nil)
-        UIView.transitionWithView(connectedLabel, duration: 1.2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { self.connectedLabel.textColor = UIColor.blackColor()}, completion: nil)
+        connectionStatus = "Scanning..."
+        connectionBarPositionSwap("Scanning")
+        
+        connectionBarPositionSwap(getConnectionStatus())
+        
+        
         
     }
+    @IBAction func cautionButton(sender: AnyObject) {
+        
+        safetyStatus = "Caution"
+        safetyBarPositionSwap(getSafetyBarStatus())
+        
+        
+    }
+    @IBAction func safeButton(sender: AnyObject) {
+        
+        safetyStatus = "Safe"
+        safetyBarPositionSwap(getSafetyBarStatus())
+        
+    }
+    @IBAction func unsafeButton(sender: AnyObject) {
+        
+        safetyStatus = "Unsafe"
+        safetyBarPositionSwap(getSafetyBarStatus())
+    }
+    
+    
     
 /*
 ///////////// Status
@@ -114,46 +129,49 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         connectionLabel.text = connectionStatus
     }
     
+    func updateSafetyStatusLabel(){
+        safetyLabel.text = safetyStatus
+    }
+    
 /*
 //////////// Transitions
 */
     
-    func fadeOutLabel(label: UILabel, duration:NSTimeInterval) {
+    func fadeOutView(viewToFade: UIView, duration:NSTimeInterval) {
         
-        UIView.transitionWithView(label, duration: duration, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {label.textColor = self.backgroundTransparencyUp}, completion: nil)
+        UIView.transitionWithView(viewToFade, duration: duration, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {viewToFade.alpha = 0.0}, completion: nil)
         
         
     }
-    func fadeInLabel(label: UILabel, duration:NSTimeInterval) {
+    func fadeInView(viewToFade: UIView, duration:NSTimeInterval) {
         
-       UIView.transitionWithView(label, duration: duration, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {label.textColor = UIColor.blackColor()}, completion: nil)
+       UIView.transitionWithView(viewToFade, duration: duration, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {viewToFade.alpha = 1.0}, completion: nil)
         
     }
     func safetyBarPositionSwap(safetyStatus:String) {
+        
+        println(safetyStatus)
+        
+        updateSafetyStatusLabel()
+        
         
         switch safetyStatus {
             
             case "Unsafe":
                 
             UIView.animateWithDuration(0.3, animations: {self.safetyStatusView.backgroundColor = self.redTransparency; self.safetyStatusView.frame = CGRect(x: 0, y: 430, width: 190, height: 50)})
-            fadeInLabel(unsafeLabel, duration: 1.2)
-            fadeOutLabel(cautionLabel, duration: 0.2)
-            fadeOutLabel(safeLabel, duration: 0.2)
+            slideToPosition(safetyLabel, duration: 0.5, xPosition: 0, yPosition: 430)
         
             case "Caution":
             
             UIView.animateWithDuration(0.3, animations: {self.safetyStatusView.backgroundColor = self.amberTransparency; self.safetyStatusView.frame = CGRect(x: 0+95, y: 430, width: 190, height: 50)})
-            fadeInLabel(cautionLabel, duration: 1.2)
-            fadeOutLabel(unsafeLabel, duration: 0.2)
-            fadeOutLabel(safeLabel, duration: 0.2)
+            slideToPosition(safetyLabel, duration: 0.5, xPosition: 85, yPosition: 430)
             
             
             case "Safe":
             
             UIView.animateWithDuration(0.3, animations: {self.safetyStatusView.backgroundColor = self.greenTransparency; self.safetyStatusView.frame = CGRect(x: 0+190, y: 430, width: 190, height: 50)})
-            fadeInLabel(safeLabel, duration: 1.2)
-            fadeOutLabel(unsafeLabel, duration: 0.2)
-            fadeOutLabel(cautionLabel, duration: 0.2)
+            slideToPosition(safetyLabel, duration: 0.5, xPosition: 190, yPosition: 430)
             
             default:
             
@@ -162,27 +180,47 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
     
     }
+    
     func connectionBarPositionSwap(connection:String) {
         
+        println(connection)
+        
+        updateConnectionStatusLabel()
+        
         if connectionStatus == "Connected" {
-            println("connected and good")
-            fadeOutLabel(connectionLabel, duration: 0.2)
-            fadeInLabel(connectedLabel, duration: 1.2)
-        }
-        
-        else {
-            println("reached the else")
-            fadeOutLabel(connectedLabel, duration: 0.2)
-            fadeInLabel(connectionLabel, duration: 1.2)
-        }
-        
             
+            fadeToGreen(connectionStatusView, duration: 0.5)
+            slideToPosition(connectionStatusView, duration: 0.5, xPosition: 190, yPosition: 380)
+            
+            slideToPosition(connectionLabel, duration: 0.5, xPosition: 190, yPosition: 380)
+            
+            
+        }
+            
+        else {
+            
+            fadeOutView(safetyStatusView, duration: 0.8)
+            fadeOutView(safetyLabel, duration: 0.8)
+            
+            fadeToGray(connectionStatusView, duration: 0.7)
+            slideToPosition(connectionStatusView, duration: 0.5, xPosition: 0, yPosition: 380)
+            
+            slideToPosition(connectionLabel, duration: 0.5, xPosition: 0, yPosition: 380)
+            
+            }
     }
-    func slideRight(viewToTransistion: UIView, duration: NSTimeInterval){
-        UIView.animateWithDuration(0.3, animations: {viewToTransistion.frame = CGRect(x: 0+190, y: 380, width: 190, height: 50)})
+        
+
+    func slideToPosition(viewToTransistion: UIView, duration: NSTimeInterval, xPosition: Int, yPosition: Int){
+        UIView.animateWithDuration(0.3, animations: {viewToTransistion.frame = CGRect(x: xPosition, y: yPosition, width: 190, height: 50)})
     }
+    
     func fadeToGreen(viewToTransistion: UIView, duration: NSTimeInterval){
         UIView.animateWithDuration(0.3, animations: {viewToTransistion.backgroundColor = self.greenTransparency})
+    }
+    
+    func fadeToGray(viewToTransistion: UIView, duration: NSTimeInterval){
+        UIView.animateWithDuration(0.3, animations: {viewToTransistion.backgroundColor = self.blueTransparency})
     }
 
 /*
@@ -312,15 +350,24 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         safetyStatusView.backgroundColor = self.redTransparency
         safetyStatusView.frame = CGRect(x: 0, y: 430, width: 190, height: 50)
+        safetyStatusView.alpha = 0.0
         
         
+        connectionLabel.textColor = UIColor.blackColor()
+        connectionLabel.frame = CGRect(x: 0, y: 380, width: 190, height: 50)
+        connectionLabel.text = connectionStatus
+        connectionLabel.textAlignment = NSTextAlignment.Center
         
-        cautionLabel.textColor = self.backgroundTransparencyUp
-        safeLabel.textColor = self.backgroundTransparencyUp
+        safetyLabel.textColor = UIColor.blackColor()
+        safetyLabel.frame = CGRect(x: 0, y: 430, width: 190, height: 50)
+        safetyLabel.text = "Unsafe"
+        safetyLabel.textAlignment = NSTextAlignment.Center
+        safetyLabel.alpha = 0.0
         
-       
-        self.connectedLabel.text = ""
+      
         
+        self.view.addSubview(connectionLabel)
+        self.view.addSubview(safetyLabel)
         self.view.addSubview(safetyStatusView)
         self.view.addSubview(connectionStatusView)
         
