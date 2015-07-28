@@ -156,7 +156,7 @@
         <!--VIP-->
         <scene sceneID="tdD-ge-zpv">
             <objects>
-                <viewController id="ltQ-Kt-6Rt" sceneMemberID="viewController">
+                <viewController id="ltQ-Kt-6Rt" customClass="vipView" customModule="pickerProj" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JMH-9g-M97"/>
                         <viewControllerLayoutGuide type="bottom" id="Wy1-hN-6VL"/>
@@ -177,6 +177,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFc-5t-CDg">
+                                <rect key="frame" x="262" y="284" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -184,7 +187,9 @@
                             <constraint firstAttribute="trailing" secondItem="H2x-eU-4ss" secondAttribute="trailing" id="ESg-UT-Exo"/>
                             <constraint firstItem="H2x-eU-4ss" firstAttribute="top" secondItem="0mp-xP-6I7" secondAttribute="top" id="EZb-an-Lo9"/>
                             <constraint firstItem="mBg-OY-kne" firstAttribute="centerX" secondItem="H2x-eU-4ss" secondAttribute="centerX" id="MDT-Vm-KR2"/>
+                            <constraint firstItem="gFc-5t-CDg" firstAttribute="top" secondItem="mBg-OY-kne" secondAttribute="bottom" constant="95" id="Q5V-eK-BJh"/>
                             <constraint firstItem="mBg-OY-kne" firstAttribute="top" secondItem="JMH-9g-M97" secondAttribute="bottom" constant="68" id="dgq-vC-ozs"/>
+                            <constraint firstItem="gFc-5t-CDg" firstAttribute="leading" secondItem="0mp-xP-6I7" secondAttribute="leading" constant="262" id="eP7-fK-LrM"/>
                             <constraint firstAttribute="bottom" secondItem="H2x-eU-4ss" secondAttribute="bottom" id="ipJ-pc-aKt"/>
                             <constraint firstItem="Wy1-hN-6VL" firstAttribute="top" secondItem="mBg-OY-kne" secondAttribute="bottom" constant="362" id="mgb-dS-Cih"/>
                         </constraints>

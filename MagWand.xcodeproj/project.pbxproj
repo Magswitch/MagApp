@@ -12,7 +12,7 @@
 		886A12361B267912008DAA50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886A12341B267912008DAA50 /* Main.storyboard */; };
 		886A12381B267912008DAA50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886A12371B267912008DAA50 /* Images.xcassets */; };
 		886A123B1B267912008DAA50 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 886A12391B267912008DAA50 /* LaunchScreen.xib */; };
-		886A12471B267912008DAA50 /* pickerProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A12461B267912008DAA50 /* pickerProjTests.swift */; };
+		886A12471B267912008DAA50 /* MagWandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A12461B267912008DAA50 /* MagWandTests.swift */; };
 		886A12511B2763C3008DAA50 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A12501B2763C3008DAA50 /* CoreFoundation.framework */; };
 		886A12531B2763D0008DAA50 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A12521B2763D0008DAA50 /* CoreBluetooth.framework */; };
 		886A12551B2763DC008DAA50 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A12541B2763DC008DAA50 /* CoreData.framework */; };
@@ -30,16 +30,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		886A122B1B267912008DAA50 /* pickerProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickerProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		886A122B1B267912008DAA50 /* MagWand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagWand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		886A122F1B267912008DAA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		886A12301B267912008DAA50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		886A12321B267912008DAA50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		886A12351B267912008DAA50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		886A12371B267912008DAA50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		886A123A1B267912008DAA50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		886A12401B267912008DAA50 /* pickerProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pickerProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		886A12401B267912008DAA50 /* MagWandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagWandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		886A12451B267912008DAA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		886A12461B267912008DAA50 /* pickerProjTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickerProjTests.swift; sourceTree = "<group>"; };
+		886A12461B267912008DAA50 /* MagWandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagWandTests.swift; sourceTree = "<group>"; };
 		886A12501B2763C3008DAA50 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		886A12521B2763D0008DAA50 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		886A12541B2763DC008DAA50 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -75,8 +75,8 @@
 				886A12541B2763DC008DAA50 /* CoreData.framework */,
 				886A12521B2763D0008DAA50 /* CoreBluetooth.framework */,
 				886A12501B2763C3008DAA50 /* CoreFoundation.framework */,
-				886A122D1B267912008DAA50 /* pickerProj */,
-				886A12431B267912008DAA50 /* pickerProjTests */,
+				886A122D1B267912008DAA50 /* MagWand */,
+				886A12431B267912008DAA50 /* MagWandTests */,
 				886A122C1B267912008DAA50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,13 +84,13 @@
 		886A122C1B267912008DAA50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				886A122B1B267912008DAA50 /* pickerProj.app */,
-				886A12401B267912008DAA50 /* pickerProjTests.xctest */,
+				886A122B1B267912008DAA50 /* MagWand.app */,
+				886A12401B267912008DAA50 /* MagWandTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		886A122D1B267912008DAA50 /* pickerProj */ = {
+		886A122D1B267912008DAA50 /* MagWand */ = {
 			isa = PBXGroup;
 			children = (
 				886A12301B267912008DAA50 /* AppDelegate.swift */,
@@ -100,6 +100,7 @@
 				886A12391B267912008DAA50 /* LaunchScreen.xib */,
 				886A122E1B267912008DAA50 /* Supporting Files */,
 			);
+			name = MagWand;
 			path = pickerProj;
 			sourceTree = "<group>";
 		};
@@ -111,12 +112,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		886A12431B267912008DAA50 /* pickerProjTests */ = {
+		886A12431B267912008DAA50 /* MagWandTests */ = {
 			isa = PBXGroup;
 			children = (
-				886A12461B267912008DAA50 /* pickerProjTests.swift */,
+				886A12461B267912008DAA50 /* MagWandTests.swift */,
 				886A12441B267912008DAA50 /* Supporting Files */,
 			);
+			name = MagWandTests;
 			path = pickerProjTests;
 			sourceTree = "<group>";
 		};
@@ -131,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		886A122A1B267912008DAA50 /* pickerProj */ = {
+		886A122A1B267912008DAA50 /* MagWand */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 886A124A1B267912008DAA50 /* Build configuration list for PBXNativeTarget "pickerProj" */;
+			buildConfigurationList = 886A124A1B267912008DAA50 /* Build configuration list for PBXNativeTarget "MagWand" */;
 			buildPhases = (
 				886A12271B267912008DAA50 /* Sources */,
 				886A12281B267912008DAA50 /* Frameworks */,
@@ -143,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = pickerProj;
+			name = MagWand;
 			productName = pickerProj;
-			productReference = 886A122B1B267912008DAA50 /* pickerProj.app */;
+			productReference = 886A122B1B267912008DAA50 /* MagWand.app */;
 			productType = "com.apple.product-type.application";
 		};
-		886A123F1B267912008DAA50 /* pickerProjTests */ = {
+		886A123F1B267912008DAA50 /* MagWandTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 886A124D1B267912008DAA50 /* Build configuration list for PBXNativeTarget "pickerProjTests" */;
+			buildConfigurationList = 886A124D1B267912008DAA50 /* Build configuration list for PBXNativeTarget "MagWandTests" */;
 			buildPhases = (
 				886A123C1B267912008DAA50 /* Sources */,
 				886A123D1B267912008DAA50 /* Frameworks */,
@@ -161,9 +163,9 @@
 			dependencies = (
 				886A12421B267912008DAA50 /* PBXTargetDependency */,
 			);
-			name = pickerProjTests;
+			name = MagWandTests;
 			productName = pickerProjTests;
-			productReference = 886A12401B267912008DAA50 /* pickerProjTests.xctest */;
+			productReference = 886A12401B267912008DAA50 /* MagWandTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -184,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 886A12261B267912008DAA50 /* Build configuration list for PBXProject "pickerProj" */;
+			buildConfigurationList = 886A12261B267912008DAA50 /* Build configuration list for PBXProject "MagWand" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -197,8 +199,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				886A122A1B267912008DAA50 /* pickerProj */,
-				886A123F1B267912008DAA50 /* pickerProjTests */,
+				886A122A1B267912008DAA50 /* MagWand */,
+				886A123F1B267912008DAA50 /* MagWandTests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				886A12471B267912008DAA50 /* pickerProjTests.swift in Sources */,
+				886A12471B267912008DAA50 /* MagWandTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +248,7 @@
 /* Begin PBXTargetDependency section */
 		886A12421B267912008DAA50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 886A122A1B267912008DAA50 /* pickerProj */;
+			target = 886A122A1B267912008DAA50 /* MagWand */;
 			targetProxy = 886A12411B267912008DAA50 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -360,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pickerProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MagWand;
 			};
 			name = Debug;
 		};
@@ -370,7 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = pickerProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MagWand;
 			};
 			name = Release;
 		};
@@ -388,7 +390,7 @@
 				);
 				INFOPLIST_FILE = pickerProjTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MagWandTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pickerProj.app/pickerProj";
 			};
 			name = Debug;
@@ -403,7 +405,7 @@
 				);
 				INFOPLIST_FILE = pickerProjTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MagWandTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pickerProj.app/pickerProj";
 			};
 			name = Release;
@@ -411,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		886A12261B267912008DAA50 /* Build configuration list for PBXProject "pickerProj" */ = {
+		886A12261B267912008DAA50 /* Build configuration list for PBXProject "MagWand" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				886A12481B267912008DAA50 /* Debug */,
@@ -420,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		886A124A1B267912008DAA50 /* Build configuration list for PBXNativeTarget "pickerProj" */ = {
+		886A124A1B267912008DAA50 /* Build configuration list for PBXNativeTarget "MagWand" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				886A124B1B267912008DAA50 /* Debug */,
@@ -429,7 +431,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		886A124D1B267912008DAA50 /* Build configuration list for PBXNativeTarget "pickerProjTests" */ = {
+		886A124D1B267912008DAA50 /* Build configuration list for PBXNativeTarget "MagWandTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				886A124E1B267912008DAA50 /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "886A122A1B267912008DAA50"
-               BuildableName = "pickerProj.app"
-               BlueprintName = "pickerProj"
-               ReferencedContainer = "container:pickerProj.xcodeproj">
+               BuildableName = "MagWand.app"
+               BlueprintName = "MagWand"
+               ReferencedContainer = "container:MagWand.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "886A123F1B267912008DAA50"
-               BuildableName = "pickerProjTests.xctest"
-               BlueprintName = "pickerProjTests"
-               ReferencedContainer = "container:pickerProj.xcodeproj">
+               BuildableName = "MagWandTests.xctest"
+               BlueprintName = "MagWandTests"
+               ReferencedContainer = "container:MagWand.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "886A123F1B267912008DAA50"
-               BuildableName = "pickerProjTests.xctest"
-               BlueprintName = "pickerProjTests"
-               ReferencedContainer = "container:pickerProj.xcodeproj">
+               BuildableName = "MagWandTests.xctest"
+               BlueprintName = "MagWandTests"
+               ReferencedContainer = "container:MagWand.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "886A122A1B267912008DAA50"
-            BuildableName = "pickerProj.app"
-            BlueprintName = "pickerProj"
-            ReferencedContainer = "container:pickerProj.xcodeproj">
+            BuildableName = "MagWand.app"
+            BlueprintName = "MagWand"
+            ReferencedContainer = "container:MagWand.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "886A122A1B267912008DAA50"
-            BuildableName = "pickerProj.app"
-            BlueprintName = "pickerProj"
-            ReferencedContainer = "container:pickerProj.xcodeproj">
+            BuildableName = "MagWand.app"
+            BlueprintName = "MagWand"
+            ReferencedContainer = "container:MagWand.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "886A122A1B267912008DAA50"
-            BuildableName = "pickerProj.app"
-            BlueprintName = "pickerProj"
-            ReferencedContainer = "container:pickerProj.xcodeproj">
+            BuildableName = "MagWand.app"
+            BlueprintName = "MagWand"
+            ReferencedContainer = "container:MagWand.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
