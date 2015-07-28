@@ -1,10 +1,62 @@
 //
 //  ViewController.swift
-//  pickerProj
+//  MagWand
 //
-//  Created by a_dog on 6/8/15.
-//  Copyright (c) 2015 a_dog. All rights reserved.
+//  Created by Andrew Gentry on 6/8/15.
 //
+//  Copyright (c) 2015 Andrew Gentry. All rights reserved.
+//
+
+
+/*
+
+To my inheritor:
+
+
+If you are reading this, I can assume that you are the person (or team of persons) that intends to
+turn the MagWand App into a reality. As a convinience to you, let me explain some of the code I have below and
+speak to the scope of what this entire project will likely entail.
+
+First off, when I wrote this code, it was our intention to use a "Red Bear Lab  BLE NANO"  to communicate
+with the MagWand.  I've already imported the CoreBluetooth framework that I thought would be most appropriate 
+to accomplish such. For now, there is little more than a simple CBcentral manager set up to respond and print to 
+the console depending on the connection status.    
+
+If you are developing the MagWand with this code, Bluetooth work will comprise most of your time if you decide to utilize 
+my layout/design. Otherwise it might be better to just start from scratch.
+
+Which brings me to my second point.  The front-end of this app is...well not the prettiest. Kinda looks odd, but at
+the very least I do like the sliding transitions and the color fades.  In all honesty I think its a really cool concept
+but could use some creative molding to look its best. Now, with that being said, I am sure that the bare bones
+of the front-end stuff (which is mostly all I have here) is written cleanly and in a way that can be scaled quickly.
+
+I have two functions called safteyBarPositionSwap and connectionBarPositionSwap to which you can pass in the saftey status 
+or the connection status respectivly and the code does the rest as far as transistions and colors go. They're pretty neat.
+
+Like I said, you can either use my code as a starting place towards creating the MagWand App or you can decide
+to start fresh and take a different approach. In either case I really don't care. This code isn't totally sentimental
+to me and plus I have copies on my machine to admire anyhow. This was mearly an ambitious attempt at App development
+that taught me quite a lot during my summer internship at Magswitch. 
+
+And so maybe it is for you too. 
+
+I hope that whoever does end up picking up this project has the same sort of motivation I felt when working on this. 
+Otherwise, it will almost certainly be done poorly. It's not common enough that people channel true passion into their
+projects. For me this was the perfect avenue to do just that. 
+
+
+Mike, Tom, Sam, New Intern, Software Dev, whoever you are just make it a point to use this project as an opportunity to 
+do something creative and moreover bad-ass. Inspire somebody. Trust me, it's so worth it.
+
+
+
+Rock on,
+
+
+> andrew gentry
+
+*/
+
 
 import UIKit
 import CoreBluetooth
