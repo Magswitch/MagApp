@@ -7,58 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		886A12311B267912008DAA50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A12301B267912008DAA50 /* AppDelegate.swift */; };
-		886A12331B267912008DAA50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A12321B267912008DAA50 /* ViewController.swift */; };
-		886A12361B267912008DAA50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886A12341B267912008DAA50 /* Main.storyboard */; };
-		886A12381B267912008DAA50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886A12371B267912008DAA50 /* Images.xcassets */; };
-		886A123B1B267912008DAA50 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 886A12391B267912008DAA50 /* LaunchScreen.xib */; };
-		886A12471B267912008DAA50 /* MagWandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A12461B267912008DAA50 /* MagWandTests.swift */; };
-		886A12511B2763C3008DAA50 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A12501B2763C3008DAA50 /* CoreFoundation.framework */; };
-		886A12531B2763D0008DAA50 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A12521B2763D0008DAA50 /* CoreBluetooth.framework */; };
-		886A12551B2763DC008DAA50 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A12541B2763DC008DAA50 /* CoreData.framework */; };
-		886A12571B2763EB008DAA50 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886A12561B2763EB008DAA50 /* QuartzCore.framework */; };
+		88BE11EC1B6BC84000361E5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BE11EB1B6BC84000361E5B /* AppDelegate.swift */; };
+		88BE11EE1B6BC84000361E5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BE11ED1B6BC84000361E5B /* ViewController.swift */; };
+		88BE11F31B6BC84000361E5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BE11F21B6BC84000361E5B /* Images.xcassets */; };
+		88BE12021B6BC84000361E5B /* MagWandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BE12011B6BC84000361E5B /* MagWandTests.swift */; };
+		88BE120D1B6BC8B600361E5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BE120B1B6BC8B600361E5B /* Main.storyboard */; };
+		88BE12101B6BC90800361E5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88BE120E1B6BC90800361E5B /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		886A12411B267912008DAA50 /* PBXContainerItemProxy */ = {
+		88BE11FC1B6BC84000361E5B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 886A12231B267912008DAA50 /* Project object */;
+			containerPortal = 88BE11DE1B6BC84000361E5B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 886A122A1B267912008DAA50;
-			remoteInfo = pickerProj;
+			remoteGlobalIDString = 88BE11E51B6BC84000361E5B;
+			remoteInfo = MagWand;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		886A122B1B267912008DAA50 /* MagWand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagWand.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		886A122F1B267912008DAA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		886A12301B267912008DAA50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		886A12321B267912008DAA50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		886A12351B267912008DAA50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		886A12371B267912008DAA50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		886A123A1B267912008DAA50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		886A12401B267912008DAA50 /* MagWandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagWandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		886A12451B267912008DAA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		886A12461B267912008DAA50 /* MagWandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagWandTests.swift; sourceTree = "<group>"; };
-		886A12501B2763C3008DAA50 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		886A12521B2763D0008DAA50 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		886A12541B2763DC008DAA50 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		886A12561B2763EB008DAA50 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		88BE11E61B6BC84000361E5B /* MagWand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagWand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BE11EA1B6BC84000361E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BE11EB1B6BC84000361E5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88BE11ED1B6BC84000361E5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88BE11F21B6BC84000361E5B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		88BE11FB1B6BC84000361E5B /* MagWandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagWandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BE12001B6BC84000361E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BE12011B6BC84000361E5B /* MagWandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagWandTests.swift; sourceTree = "<group>"; };
+		88BE120C1B6BC8B600361E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../MagWand App/MagWand/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		88BE120F1B6BC90800361E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "../../MagWand App/MagWand/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		886A12281B267912008DAA50 /* Frameworks */ = {
+		88BE11E31B6BC84000361E5B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				886A12571B2763EB008DAA50 /* QuartzCore.framework in Frameworks */,
-				886A12551B2763DC008DAA50 /* CoreData.framework in Frameworks */,
-				886A12531B2763D0008DAA50 /* CoreBluetooth.framework in Frameworks */,
-				886A12511B2763C3008DAA50 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		886A123D1B267912008DAA50 /* Frameworks */ = {
+		88BE11F81B6BC84000361E5B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,64 +56,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		886A12221B267912008DAA50 = {
+		88BE11DD1B6BC84000361E5B = {
 			isa = PBXGroup;
 			children = (
-				886A12561B2763EB008DAA50 /* QuartzCore.framework */,
-				886A12541B2763DC008DAA50 /* CoreData.framework */,
-				886A12521B2763D0008DAA50 /* CoreBluetooth.framework */,
-				886A12501B2763C3008DAA50 /* CoreFoundation.framework */,
-				886A122D1B267912008DAA50 /* MagWand */,
-				886A12431B267912008DAA50 /* MagWandTests */,
-				886A122C1B267912008DAA50 /* Products */,
+				88BE11E81B6BC84000361E5B /* MagWand */,
+				88BE11FE1B6BC84000361E5B /* MagWandTests */,
+				88BE11E71B6BC84000361E5B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		886A122C1B267912008DAA50 /* Products */ = {
+		88BE11E71B6BC84000361E5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				886A122B1B267912008DAA50 /* MagWand.app */,
-				886A12401B267912008DAA50 /* MagWandTests.xctest */,
+				88BE11E61B6BC84000361E5B /* MagWand.app */,
+				88BE11FB1B6BC84000361E5B /* MagWandTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		886A122D1B267912008DAA50 /* MagWand */ = {
+		88BE11E81B6BC84000361E5B /* MagWand */ = {
 			isa = PBXGroup;
 			children = (
-				886A12301B267912008DAA50 /* AppDelegate.swift */,
-				886A12321B267912008DAA50 /* ViewController.swift */,
-				886A12341B267912008DAA50 /* Main.storyboard */,
-				886A12371B267912008DAA50 /* Images.xcassets */,
-				886A12391B267912008DAA50 /* LaunchScreen.xib */,
-				886A122E1B267912008DAA50 /* Supporting Files */,
+				88BE11EB1B6BC84000361E5B /* AppDelegate.swift */,
+				88BE11ED1B6BC84000361E5B /* ViewController.swift */,
+				88BE11F21B6BC84000361E5B /* Images.xcassets */,
+				88BE120B1B6BC8B600361E5B /* Main.storyboard */,
+				88BE120E1B6BC90800361E5B /* LaunchScreen.xib */,
+				88BE11E91B6BC84000361E5B /* Supporting Files */,
 			);
-			name = MagWand;
-			path = pickerProj;
+			path = MagWand;
 			sourceTree = "<group>";
 		};
-		886A122E1B267912008DAA50 /* Supporting Files */ = {
+		88BE11E91B6BC84000361E5B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				886A122F1B267912008DAA50 /* Info.plist */,
+				88BE11EA1B6BC84000361E5B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		886A12431B267912008DAA50 /* MagWandTests */ = {
+		88BE11FE1B6BC84000361E5B /* MagWandTests */ = {
 			isa = PBXGroup;
 			children = (
-				886A12461B267912008DAA50 /* MagWandTests.swift */,
-				886A12441B267912008DAA50 /* Supporting Files */,
+				88BE12011B6BC84000361E5B /* MagWandTests.swift */,
+				88BE11FF1B6BC84000361E5B /* Supporting Files */,
 			);
-			name = MagWandTests;
-			path = pickerProjTests;
+			path = MagWandTests;
 			sourceTree = "<group>";
 		};
-		886A12441B267912008DAA50 /* Supporting Files */ = {
+		88BE11FF1B6BC84000361E5B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				886A12451B267912008DAA50 /* Info.plist */,
+				88BE12001B6BC84000361E5B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -133,60 +115,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		886A122A1B267912008DAA50 /* MagWand */ = {
+		88BE11E51B6BC84000361E5B /* MagWand */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 886A124A1B267912008DAA50 /* Build configuration list for PBXNativeTarget "MagWand" */;
+			buildConfigurationList = 88BE12051B6BC84000361E5B /* Build configuration list for PBXNativeTarget "MagWand" */;
 			buildPhases = (
-				886A12271B267912008DAA50 /* Sources */,
-				886A12281B267912008DAA50 /* Frameworks */,
-				886A12291B267912008DAA50 /* Resources */,
+				88BE11E21B6BC84000361E5B /* Sources */,
+				88BE11E31B6BC84000361E5B /* Frameworks */,
+				88BE11E41B6BC84000361E5B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MagWand;
-			productName = pickerProj;
-			productReference = 886A122B1B267912008DAA50 /* MagWand.app */;
+			productName = MagWand;
+			productReference = 88BE11E61B6BC84000361E5B /* MagWand.app */;
 			productType = "com.apple.product-type.application";
 		};
-		886A123F1B267912008DAA50 /* MagWandTests */ = {
+		88BE11FA1B6BC84000361E5B /* MagWandTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 886A124D1B267912008DAA50 /* Build configuration list for PBXNativeTarget "MagWandTests" */;
+			buildConfigurationList = 88BE12081B6BC84000361E5B /* Build configuration list for PBXNativeTarget "MagWandTests" */;
 			buildPhases = (
-				886A123C1B267912008DAA50 /* Sources */,
-				886A123D1B267912008DAA50 /* Frameworks */,
-				886A123E1B267912008DAA50 /* Resources */,
+				88BE11F71B6BC84000361E5B /* Sources */,
+				88BE11F81B6BC84000361E5B /* Frameworks */,
+				88BE11F91B6BC84000361E5B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				886A12421B267912008DAA50 /* PBXTargetDependency */,
+				88BE11FD1B6BC84000361E5B /* PBXTargetDependency */,
 			);
 			name = MagWandTests;
-			productName = pickerProjTests;
-			productReference = 886A12401B267912008DAA50 /* MagWandTests.xctest */;
+			productName = MagWandTests;
+			productReference = 88BE11FB1B6BC84000361E5B /* MagWandTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		886A12231B267912008DAA50 /* Project object */ = {
+		88BE11DE1B6BC84000361E5B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
-				ORGANIZATIONNAME = a_dog;
+				ORGANIZATIONNAME = Magswitch;
 				TargetAttributes = {
-					886A122A1B267912008DAA50 = {
+					88BE11E51B6BC84000361E5B = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
-					886A123F1B267912008DAA50 = {
+					88BE11FA1B6BC84000361E5B = {
 						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 886A122A1B267912008DAA50;
+						TestTargetID = 88BE11E51B6BC84000361E5B;
 					};
 				};
 			};
-			buildConfigurationList = 886A12261B267912008DAA50 /* Build configuration list for PBXProject "MagWand" */;
+			buildConfigurationList = 88BE11E11B6BC84000361E5B /* Build configuration list for PBXProject "MagWand" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -194,29 +176,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 886A12221B267912008DAA50;
-			productRefGroup = 886A122C1B267912008DAA50 /* Products */;
+			mainGroup = 88BE11DD1B6BC84000361E5B;
+			productRefGroup = 88BE11E71B6BC84000361E5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				886A122A1B267912008DAA50 /* MagWand */,
-				886A123F1B267912008DAA50 /* MagWandTests */,
+				88BE11E51B6BC84000361E5B /* MagWand */,
+				88BE11FA1B6BC84000361E5B /* MagWandTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		886A12291B267912008DAA50 /* Resources */ = {
+		88BE11E41B6BC84000361E5B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				886A12361B267912008DAA50 /* Main.storyboard in Resources */,
-				886A123B1B267912008DAA50 /* LaunchScreen.xib in Resources */,
-				886A12381B267912008DAA50 /* Images.xcassets in Resources */,
+				88BE120D1B6BC8B600361E5B /* Main.storyboard in Resources */,
+				88BE12101B6BC90800361E5B /* LaunchScreen.xib in Resources */,
+				88BE11F31B6BC84000361E5B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		886A123E1B267912008DAA50 /* Resources */ = {
+		88BE11F91B6BC84000361E5B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -226,46 +208,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		886A12271B267912008DAA50 /* Sources */ = {
+		88BE11E21B6BC84000361E5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				886A12331B267912008DAA50 /* ViewController.swift in Sources */,
-				886A12311B267912008DAA50 /* AppDelegate.swift in Sources */,
+				88BE11EE1B6BC84000361E5B /* ViewController.swift in Sources */,
+				88BE11EC1B6BC84000361E5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		886A123C1B267912008DAA50 /* Sources */ = {
+		88BE11F71B6BC84000361E5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				886A12471B267912008DAA50 /* MagWandTests.swift in Sources */,
+				88BE12021B6BC84000361E5B /* MagWandTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		886A12421B267912008DAA50 /* PBXTargetDependency */ = {
+		88BE11FD1B6BC84000361E5B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 886A122A1B267912008DAA50 /* MagWand */;
-			targetProxy = 886A12411B267912008DAA50 /* PBXContainerItemProxy */;
+			target = 88BE11E51B6BC84000361E5B /* MagWand */;
+			targetProxy = 88BE11FC1B6BC84000361E5B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		886A12341B267912008DAA50 /* Main.storyboard */ = {
+		88BE120B1B6BC8B600361E5B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				886A12351B267912008DAA50 /* Base */,
+				88BE120C1B6BC8B600361E5B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		886A12391B267912008DAA50 /* LaunchScreen.xib */ = {
+		88BE120E1B6BC90800361E5B /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				886A123A1B267912008DAA50 /* Base */,
+				88BE120F1B6BC90800361E5B /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -273,7 +255,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		886A12481B267912008DAA50 /* Debug */ = {
+		88BE12031B6BC84000361E5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -318,7 +300,7 @@
 			};
 			name = Debug;
 		};
-		886A12491B267912008DAA50 /* Release */ = {
+		88BE12041B6BC84000361E5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -356,27 +338,27 @@
 			};
 			name = Release;
 		};
-		886A124B1B267912008DAA50 /* Debug */ = {
+		88BE12061B6BC84000361E5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = pickerProj/Info.plist;
+				INFOPLIST_FILE = MagWand/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = MagWand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		886A124C1B267912008DAA50 /* Release */ = {
+		88BE12071B6BC84000361E5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = pickerProj/Info.plist;
+				INFOPLIST_FILE = MagWand/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = MagWand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		886A124E1B267912008DAA50 /* Debug */ = {
+		88BE12091B6BC84000361E5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -388,14 +370,14 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = pickerProjTests/Info.plist;
+				INFOPLIST_FILE = MagWandTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = MagWandTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pickerProj.app/pickerProj";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagWand.app/MagWand";
 			};
 			name = Debug;
 		};
-		886A124F1B267912008DAA50 /* Release */ = {
+		88BE120A1B6BC84000361E5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -403,44 +385,42 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = pickerProjTests/Info.plist;
+				INFOPLIST_FILE = MagWandTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = MagWandTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pickerProj.app/pickerProj";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagWand.app/MagWand";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		886A12261B267912008DAA50 /* Build configuration list for PBXProject "MagWand" */ = {
+		88BE11E11B6BC84000361E5B /* Build configuration list for PBXProject "MagWand" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				886A12481B267912008DAA50 /* Debug */,
-				886A12491B267912008DAA50 /* Release */,
+				88BE12031B6BC84000361E5B /* Debug */,
+				88BE12041B6BC84000361E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		886A124A1B267912008DAA50 /* Build configuration list for PBXNativeTarget "MagWand" */ = {
+		88BE12051B6BC84000361E5B /* Build configuration list for PBXNativeTarget "MagWand" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				886A124B1B267912008DAA50 /* Debug */,
-				886A124C1B267912008DAA50 /* Release */,
+				88BE12061B6BC84000361E5B /* Debug */,
+				88BE12071B6BC84000361E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		886A124D1B267912008DAA50 /* Build configuration list for PBXNativeTarget "MagWandTests" */ = {
+		88BE12081B6BC84000361E5B /* Build configuration list for PBXNativeTarget "MagWandTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				886A124E1B267912008DAA50 /* Debug */,
-				886A124F1B267912008DAA50 /* Release */,
+				88BE12091B6BC84000361E5B /* Debug */,
+				88BE120A1B6BC84000361E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 886A12231B267912008DAA50 /* Project object */;
+	rootObject = 88BE11DE1B6BC84000361E5B /* Project object */;
 }

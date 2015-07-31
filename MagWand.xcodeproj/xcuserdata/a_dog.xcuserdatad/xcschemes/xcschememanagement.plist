@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>pickerProj.xcscheme</key>
+		<key>MagWand.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>886A122A1B267912008DAA50</key>
+		<key>88BE11E51B6BC84000361E5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>886A123F1B267912008DAA50</key>
+		<key>88BE11FA1B6BC84000361E5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

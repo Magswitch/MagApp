@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "886A122A1B267912008DAA50"
+               BlueprintIdentifier = "88BE11E51B6BC84000361E5B"
                BuildableName = "MagWand.app"
                BlueprintName = "MagWand"
                ReferencedContainer = "container:MagWand.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "886A123F1B267912008DAA50"
+               BlueprintIdentifier = "88BE11FA1B6BC84000361E5B"
                BuildableName = "MagWandTests.xctest"
                BlueprintName = "MagWandTests"
                ReferencedContainer = "container:MagWand.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "886A123F1B267912008DAA50"
+               BlueprintIdentifier = "88BE11FA1B6BC84000361E5B"
                BuildableName = "MagWandTests.xctest"
                BlueprintName = "MagWandTests"
                ReferencedContainer = "container:MagWand.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "886A122A1B267912008DAA50"
+            BlueprintIdentifier = "88BE11E51B6BC84000361E5B"
             BuildableName = "MagWand.app"
             BlueprintName = "MagWand"
             ReferencedContainer = "container:MagWand.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "886A122A1B267912008DAA50"
+            BlueprintIdentifier = "88BE11E51B6BC84000361E5B"
             BuildableName = "MagWand.app"
             BlueprintName = "MagWand"
             ReferencedContainer = "container:MagWand.xcodeproj">
@@ -95,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "886A122A1B267912008DAA50"
+            BlueprintIdentifier = "88BE11E51B6BC84000361E5B"
             BuildableName = "MagWand.app"
             BlueprintName = "MagWand"
             ReferencedContainer = "container:MagWand.xcodeproj">
