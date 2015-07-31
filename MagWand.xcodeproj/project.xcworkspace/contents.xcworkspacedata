@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/a_dog/Desktop/pickerProj/MagWand.xcodeproj">
+      location = "self:MagWand.xcodeproj">
    </FileRef>
 </Workspace>
