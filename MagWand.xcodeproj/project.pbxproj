@@ -13,6 +13,7 @@
 		88BE12021B6BC84000361E5B /* MagWandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BE12011B6BC84000361E5B /* MagWandTests.swift */; };
 		88BE120D1B6BC8B600361E5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BE120B1B6BC8B600361E5B /* Main.storyboard */; };
 		88BE12101B6BC90800361E5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88BE120E1B6BC90800361E5B /* LaunchScreen.xib */; };
+		88BE12121B6BCD5A00361E5B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BE12111B6BCD5A00361E5B /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		88BE12011B6BC84000361E5B /* MagWandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagWandTests.swift; sourceTree = "<group>"; };
 		88BE120C1B6BC8B600361E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../MagWand App/MagWand/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		88BE120F1B6BC90800361E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "../../MagWand App/MagWand/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
+		88BE12111B6BCD5A00361E5B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BE12121B6BCD5A00361E5B /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		88BE11DD1B6BC84000361E5B = {
 			isa = PBXGroup;
 			children = (
+				88BE12111B6BCD5A00361E5B /* CoreBluetooth.framework */,
 				88BE11E81B6BC84000361E5B /* MagWand */,
 				88BE11FE1B6BC84000361E5B /* MagWandTests */,
 				88BE11E71B6BC84000361E5B /* Products */,
@@ -411,6 +415,7 @@
 				88BE12071B6BC84000361E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88BE12081B6BC84000361E5B /* Build configuration list for PBXNativeTarget "MagWandTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				88BE120A1B6BC84000361E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
