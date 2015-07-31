@@ -11,9 +11,9 @@
 		88BE11EE1B6BC84000361E5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BE11ED1B6BC84000361E5B /* ViewController.swift */; };
 		88BE11F31B6BC84000361E5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BE11F21B6BC84000361E5B /* Images.xcassets */; };
 		88BE12021B6BC84000361E5B /* MagWandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BE12011B6BC84000361E5B /* MagWandTests.swift */; };
-		88BE120D1B6BC8B600361E5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BE120B1B6BC8B600361E5B /* Main.storyboard */; };
-		88BE12101B6BC90800361E5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88BE120E1B6BC90800361E5B /* LaunchScreen.xib */; };
 		88BE12121B6BCD5A00361E5B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BE12111B6BCD5A00361E5B /* CoreBluetooth.framework */; };
+		88BE12211B6BD47700361E5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88BE121D1B6BD47700361E5B /* LaunchScreen.xib */; };
+		88BE12221B6BD47700361E5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BE121F1B6BD47700361E5B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +35,9 @@
 		88BE11FB1B6BC84000361E5B /* MagWandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagWandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BE12001B6BC84000361E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88BE12011B6BC84000361E5B /* MagWandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagWandTests.swift; sourceTree = "<group>"; };
-		88BE120C1B6BC8B600361E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../MagWand App/MagWand/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		88BE120F1B6BC90800361E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "../../MagWand App/MagWand/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
 		88BE12111B6BCD5A00361E5B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		88BE121E1B6BD47700361E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		88BE12201B6BD47700361E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +83,9 @@
 			children = (
 				88BE11EB1B6BC84000361E5B /* AppDelegate.swift */,
 				88BE11ED1B6BC84000361E5B /* ViewController.swift */,
+				88BE121D1B6BD47700361E5B /* LaunchScreen.xib */,
+				88BE121F1B6BD47700361E5B /* Main.storyboard */,
 				88BE11F21B6BC84000361E5B /* Images.xcassets */,
-				88BE120B1B6BC8B600361E5B /* Main.storyboard */,
-				88BE120E1B6BC90800361E5B /* LaunchScreen.xib */,
 				88BE11E91B6BC84000361E5B /* Supporting Files */,
 			);
 			path = MagWand;
@@ -196,8 +196,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88BE120D1B6BC8B600361E5B /* Main.storyboard in Resources */,
-				88BE12101B6BC90800361E5B /* LaunchScreen.xib in Resources */,
+				88BE12221B6BD47700361E5B /* Main.storyboard in Resources */,
+				88BE12211B6BD47700361E5B /* LaunchScreen.xib in Resources */,
 				88BE11F31B6BC84000361E5B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,20 +240,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		88BE120B1B6BC8B600361E5B /* Main.storyboard */ = {
+		88BE121D1B6BD47700361E5B /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				88BE120C1B6BC8B600361E5B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		88BE120E1B6BC90800361E5B /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88BE120F1B6BC90800361E5B /* Base */,
+				88BE121E1B6BD47700361E5B /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		88BE121F1B6BD47700361E5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88BE12201B6BD47700361E5B /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
