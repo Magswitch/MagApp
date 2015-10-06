@@ -41,8 +41,7 @@ that taught me quite a lot during my summer internship at Magswitch.
 And so maybe it is for you too.
 
 I hope that whoever does end up picking up this project has the same sort of motivation I felt when working on this.
-Otherwise, it will almost certainly be done poorly. It's not common enough that people channel true passion into their
-projects. For me this was the perfect avenue to do just that.
+Otherwise, it will almost certainly be done poorly. 
 
 
 Mike, Tom, Sam, New Intern, Software Dev, whoever you are just make it a point to use this project as an opportunity to
@@ -134,8 +133,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         centralManager.scanForPeripheralsWithServices(nil, options: nil)
         
         connectionStatus = "Scanning..."
-        connectionBarPositionSwap("Scanning")
-        
         connectionBarPositionSwap(getConnectionStatus())
         
         
@@ -334,6 +331,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 3
     }
+    
     func pickerView(pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
         
         
